@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|c:\\users\\donal\\source\\repos\\mellowsapp2\\mellowsapp2\\members.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|solutionrelative:mellowsapp2\\members.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|c:\\users\\donal\\source\\repos\\mellowsapp2\\mellowsapp2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|solutionrelative:mellowsapp2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|c:\\users\\donal\\source\\repos\\mellowsapp2\\mellowsapp2\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|solutionrelative:mellowsapp2\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|c:\\users\\donal\\source\\repos\\mellowsapp2\\mellowsapp2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|solutionrelative:mellowsapp2\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|c:\\users\\donal\\source\\repos\\mellowsapp2\\mellowsapp2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|solutionrelative:mellowsapp2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|c:\\users\\donal\\source\\repos\\mellowsapp2\\mellowsapp2\\members.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3799A2D2-D982-4972-9537-6043CB068B7D}|MellowsApp2\\MellowsApp2.csproj|solutionrelative:mellowsapp2\\members.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MellowsApp2\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\MainWindow.xaml",
+              "RelativeToolTip": "MellowsApp2\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-24T09:02:23.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\App.config",
+              "RelativeDocumentMoniker": "MellowsApp2\\App.config",
+              "ToolTip": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\App.config",
+              "RelativeToolTip": "MellowsApp2\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-18T19:26:42.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MellowsApp2\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MellowsApp2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:11:58.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\LoginView.xaml.cs",
+              "RelativeDocumentMoniker": "MellowsApp2\\LoginView.xaml.cs",
+              "ToolTip": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\LoginView.xaml.cs",
+              "RelativeToolTip": "MellowsApp2\\LoginView.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:11:36.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Members.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\Members.xaml.cs",
+              "RelativeDocumentMoniker": "MellowsApp2\\Members.xaml.cs",
+              "ToolTip": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\Members.xaml.cs",
+              "RelativeToolTip": "MellowsApp2\\Members.xaml.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T13:57:55.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Members.xaml",
+              "DocumentMoniker": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\Members.xaml",
+              "RelativeDocumentMoniker": "MellowsApp2\\Members.xaml",
+              "ToolTip": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\Members.xaml",
+              "RelativeToolTip": "MellowsApp2\\Members.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-14T14:00:36.394Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+﻿<UserControl x:Class="MellowsApp2.Course"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MellowsApp2"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1366">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="210"/>
+            <RowDefinition Height="210"/>
+            <RowDefinition Height="210"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="228"/>
+            <ColumnDefinition Width="228"/>
+            <ColumnDefinition Width="228"/>
+            <ColumnDefinition Width="228"/>
+            <ColumnDefinition Width="228"/>
+            <ColumnDefinition Width="228"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="1" Grid.RowSpan="7" Grid.ColumnSpan="6" Width="1366" BorderThickness="5">
+            <Rectangle Grid.Row="1" RadiusX="15" RadiusY="15" Margin="0,-10,0,0">
+                <Rectangle.Fill>
+                    <LinearGradientBrush>
+                        <GradientStop Color="DarkGreen" Offset="0.0"/>
+                        <GradientStop Color="LightGreen" Offset="0.25"/>
+                        <GradientStop Color="DarkGreen" Offset="0.5"/>
+                        <GradientStop Color="LightGreen" Offset="0.75"/>
+                        <GradientStop Color="DarkGreen" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Border>
+
+        <Button Grid.Row="0" Width="150" Height="30" Content="Back to Members" FontSize="14" FontWeight="Bold"
+                Style="{StaticResource ButtonRound}" Click="MembersClick" Background="LightBlue"></Button>
+
+        <Label Content="Course" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="22" 
+               FontWeight="Bold"></Label>
+
+        <Image Source="/Images/first.png" Grid.Row="1" Grid.Column="0" Width="200" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="1st - 37M - Ind 16" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole1" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/second.png" Grid.Row="1" Grid.Column="1" Width="200" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="2nd - 49M - Ind 8" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole2" Content="Average Score = 3.23" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="1" Grid.Column="2" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole3 - Index 10" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole3" Content="Average Score = 3.23" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="1" Grid.Column="3" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole4 - Index 6" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole4" Content="Average Score = 3.23" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="1" Grid.Column="4" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole5 - Index 2" Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole5" Content="Average Score = 3.23" Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="1" Grid.Column="5" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole6 - Index 18" Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole6" Content="Average Score = 3.23" Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="2" Grid.Column="0" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole7 - Index 14" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole7" Content="Average Score = 3.23" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="2" Grid.Column="1" Width="160"
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole8 - Index 4" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole8" Content="Average Score = 3.23" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="2" Grid.Column="2" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole9 - Index 12" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole9" Content="Average Score = 3.23" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="2" Grid.Column="3" Width="160"
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole10 - Index 9" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole10" Content="Average Score = 3.23" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="2" Grid.Column="4" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole11 - Index 5" Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole11" Content="Average Score = 3.23" Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="2" Grid.Column="5" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole12 - Index 17" Grid.Row="2" Grid.Column="5" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole12" Content="Average Score = 3.23" Grid.Row="2" Grid.Column="5" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="3" Grid.Column="0" Width="160"
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole13 - Index 11" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole13" Content="Average Score = 3.23" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="3" Grid.Column="1" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole14 - Index 1" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole14" Content="Average Score = 3.23" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="3" Grid.Column="2" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole15 - Index 7" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole15" Content="Average Score = 3.23" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="3" Grid.Column="3" Width="160" 
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole16 - Index 13" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole16" Content="Average Score = 3.23" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="3" Grid.Column="4" Width="160"
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole17 - Index 15" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole17" Content="Average Score = 3.23" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+
+        <Image Source="/Images/golf.png" Grid.Row="3" Grid.Column="5" Width="160"
+               VerticalAlignment="Top" Margin="10"></Image>
+        <Label Content="Hole18 - Index 3" Grid.Row="3" Grid.Column="5" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom" Margin="0,0,0,15"></Label>
+        <Label x:Name="Hole18" Content="Average Score = 3.23" Grid.Row="3" Grid.Column="5" HorizontalAlignment="Center" 
+               FontSize="16" FontWeight="Bold" VerticalContentAlignment="Bottom"></Label>
+    </Grid>
+</UserControl>

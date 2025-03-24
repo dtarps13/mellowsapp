@@ -1,0 +1,221 @@
+﻿<UserControl x:Class="MellowsApp2.Members"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MellowsApp2"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1366">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="430"/>
+            <RowDefinition Height="280"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="1" Grid.RowSpan="2" Width="1366" BorderThickness="5">
+            <Rectangle Grid.Row="2" RadiusX="15" RadiusY="15" Margin="0,-6,0,6">
+                <Rectangle.Fill>
+                    <LinearGradientBrush>
+                        <GradientStop Color="DarkGreen" Offset="0.0"/>
+                        <GradientStop Color="LightGreen" Offset="0.25"/>
+                        <GradientStop Color="DarkGreen" Offset="0.5"/>
+                        <GradientStop Color="LightGreen" Offset="0.75"/>
+                        <GradientStop Color="DarkGreen" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Border>
+        <StackPanel Grid.Row="0" Height="50" Width="1366">
+            <Label Content="Members" FontSize="24" Foreground="DarkGreen" HorizontalAlignment="Center" 
+                   FontWeight="Bold"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Left" Width="300" VerticalAlignment="Top">
+            <Label Content="Add/Edit Member" Margin="50,10,0,0" FontSize="18" FontWeight="Bold"></Label>
+            <Label Content="Member Name" Margin="50,-5,0,0" FontSize="16"></Label>
+            <TextBox x:Name="memberName" Width="200" Height="30" Margin="0,-3,0,0" FontSize="16" MaxLength="50"></TextBox>
+            <Label Content="Member Reg No." Margin="50,-2,0,0" FontSize="16"></Label>
+            <TextBox x:Name="memberRegNo" Width="200" Height="30" Margin="0,-3,0,0" FontSize="16" 
+                     PreviewTextInput="NumberValidationTextBox" MaxLength="6"></TextBox>
+            <Label Content="Handicap" Margin="50,-5,0,0" FontSize="16"></Label>
+            <TextBox x:Name="handicap" Width="200" Height="30" Margin="0,-3,0,0" FontSize="16" 
+                    PreviewTextInput="NumberValidationTextBoxHandicap" MaxLength="5"/>
+            <Button x:Name="btnSave" Content="Save" Height="30" Width="200" Margin="0 15 0 0"
+                    FontSize="16" Background="LightBlue" Style="{StaticResource ButtonRound}" FontWeight="Bold" 
+                    Click="btnSaveMemberAddUpdate_Click">
+            </Button>
+            <Button x:Name="btnCancel" Content="Cancel" Height="30" Width="200" Margin="0 5 0 0"
+                    FontSize="16" Background="LightBlue" Style="{StaticResource ButtonRound}" FontWeight="Bold" 
+                    Click="btnCancelMemberAddUpdate_Click">
+            </Button>
+            <Label Content="View Player" FontSize="16" Margin="50,15,0,0"></Label>
+            <TextBox x:Name="viewPlayer" Width="200" Height="30" Margin="0,0,0,0" FontSize="16" 
+                     IsEnabled="False"></TextBox>
+            <Button x:Name="btnView" Content="Select Player From Table" Height="30" Width="200" Margin="0 5 0 0"
+                    FontSize="16" Style="{StaticResource ButtonRound}" FontWeight="Bold" Click="btnViewPlayer_Click" 
+                    IsEnabled="False" Background="LightBlue" ToolTip="Select Player from Table"></Button>
+        </StackPanel>
+        
+        <Label Content="M/F" Grid.Row="1" Margin="267,70,0,0" FontSize="14"></Label>
+        <TextBox x:Name="maleOrFemale" Grid.Row="1" Width="20" Height="20" Margin="-800,0,0,220" 
+                 FontSize="16" MaxLength="1" SelectedText="" PreviewTextInput="MaleOrFemaleValidateTextEntry"></TextBox>
+        <Label Content="Juv Y/N" Grid.Row="1" Margin="257,119,0,0" FontSize="16"></Label>
+        <TextBox x:Name="juvenile" Grid.Row="1" Width="20" Height="20" Margin="-800,0,0,120" 
+                 FontSize="16" MaxLength="1" PreviewTextInput="YesOrNoValidateTextEntry"></TextBox>
+        <Button x:Name="femaleFilter" Content="Female" Grid.Row="1" Width="150" Height="30" FontSize="16" 
+                FontWeight="Bold" Click="FilterFemaleClick" Margin="-500,0,0,300" 
+                Style="{StaticResource ButtonRound}" Background="LightBlue"></Button>
+        <Button x:Name="maleFilter" Content="Male" Grid.Row="1" Width="150" Height="30" FontSize="16" 
+                FontWeight="Bold" Click="FilterMaleClick" Margin="-500,0,0,200" 
+                Style="{StaticResource ButtonRound}" Background="LightBlue"></Button>
+        <Button x:Name="juvenileFilter" Content="Juvenile" Grid.Row="1" Width="150" Height="30" FontSize="16" 
+                FontWeight="Bold" Click="FilterJuvenileClick" Margin="-500,0,0,100" 
+                Style="{StaticResource ButtonRound}" Background="LightBlue"></Button>
+        <Button x:Name="showAllMembers" Content="Show All" Grid.Row="1" Width="150" Height="30" FontSize="16" 
+                FontWeight="Bold" Click="ShowAllMembersClick" Margin="-500,0,0,0" 
+                Style="{StaticResource ButtonRound}" Background="LightBlue"></Button>
+        <Button x:Name="seniorFilter" Content="Senior" Grid.Row="1" Width="150" Height="30" FontSize="16" 
+                FontWeight="Bold" Click="FilterSeniorClick" Margin="-500,0,0,-100" 
+                Style="{StaticResource ButtonRound}" Background="LightBlue"></Button>
+        <Button x:Name="interFilter" Content="Intermediate" Grid.Row="1" Width="150" Height="30" FontSize="16" 
+                FontWeight="Bold" Click="FilterIntermediateClick" Margin="-500,0,0,-200" 
+                Style="{StaticResource ButtonRound}" Background="LightBlue"></Button>
+        <Button x:Name="juniorfilter" Content="Junior" Grid.Row="1" Width="150" Height="30" FontSize="16" 
+                FontWeight="Bold" Click="FilterJuniorClick" Margin="-500,0,0,-300" 
+                Style="{StaticResource ButtonRound}" Background="LightBlue"></Button>
+
+        <Button x:Name="viewCourse" Content="View Course Stats" Grid.Row="2" Width="150" Height="30" FontSize="16" 
+                FontWeight="Bold" Click="ViewCourseStats_Click" Margin="-500,0,0,0" 
+                Style="{StaticResource ButtonRound}" Background="LightBlue"></Button>
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Left" Width="300" VerticalAlignment="Top" >
+            <Button x:Name="addCompetition" Content="Add Competition" Grid.Row="2" Width="200" Height="30" 
+                    Margin="0 -5 0 0" FontSize="16" Style="{StaticResource ButtonRound}" 
+                    FontWeight="Bold" Click="btn_AddCompetition" Background="LightBlue"></Button>
+            <Label x:Name="compName" Content="Enter Competition Name" Margin="50,0,0,0" FontSize="16"
+                   Visibility="Hidden"></Label>
+            <TextBox x:Name="competitionName" Width="200" Height="30" Margin="0 -5 0 0" FontSize="16"
+                     FontWeight="Bold" Visibility="Hidden" MaxLength="50"></TextBox>
+            <Label x:Name="rounds" Content="No. Of Rounds (1 or 2)" Margin="50,0,0,0" FontSize="16"
+                   Visibility="Hidden"></Label>
+            <TextBox x:Name="noOfRounds" Width="200" Height="30" Margin="0 -5 0 0" FontSize="16"
+                     FontWeight="Bold" Visibility="Hidden" MaxLength="1" 
+                     PreviewTextInput="NumberValidationTextBox"></TextBox>
+            <Button x:Name="confirmCompetition" Content="Confirm" Grid.Row="2" Width="200" Height="30" 
+                    Margin="0 10 0 0" VerticalAlignment="Center" FontSize="16" Style="{StaticResource ButtonRound}" 
+                    FontWeight="Bold" Click="btn_ConfirmCompetition" Visibility="Hidden" Background="LightBlue"></Button>
+            <Button x:Name="cancelCompetition" Content="Cancel" Grid.Row="2" Width="200" Height="30" 
+                    Margin="0 10 0 0" VerticalAlignment="Center" FontSize="16" Style="{StaticResource ButtonRound}" 
+                    FontWeight="Bold" Click="btn_CancelCompetition" Visibility="Hidden" Background="LightBlue"></Button>
+        </StackPanel>
+
+        <StackPanel Height="600" Width="1000" Grid.Row="1" Margin="0,0" VerticalAlignment="Top">
+            <DataGrid Name="membersList" AutoGenerateColumns="False" Height="400" Margin="330,20,0,0" Width="594" 
+                              Background="Transparent" CanUserAddRows="False" 
+                              SelectedCellsChanged="Members_SelectedCellsChanged" 
+                              SelectionUnit="Cell" VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="Id" Header="Id" Width="30" CanUserResize="False" 
+                                                Visibility="Hidden" Binding="{Binding Path=Id}"/>
+                    <DataGridTemplateColumn x:Name="tableEdit" Header="" Width="40" IsReadOnly="True" DisplayIndex="0">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="Images/edit.png" ToolTip="Edit" Width="20" Height="20"  
+                                               x:Name="Edit"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn x:Name="Member" Header="Member Name" Width="200" CanUserResize="False" 
+                                        CanUserReorder="False" Binding="{Binding Path=Member}" 
+                                        IsReadOnly="True"/>
+                    <DataGridTextColumn x:Name="RegNo" Header="Registration Number" Width="150" 
+                                        MinWidth="20" CanUserResize="False" CanUserReorder="False" 
+                                        Binding="{Binding Path=RegNo}" IsReadOnly="True"/>
+                    <DataGridTextColumn x:Name="Handicap" Header="Handicap" Width="100" 
+                                        MinWidth="20" CanUserResize="False" CanUserReorder="False" 
+                                        Binding="{Binding Path=Handicap}" IsReadOnly="True"/>
+
+                    <DataGridTemplateColumn x:Name="tableDelete" Header="" Width="40" IsReadOnly="True" DisplayIndex="5">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="Images/delete.png" ToolTip="Delete" Width="20" Height="20" 
+                                               x:Name="Delete"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn x:Name="tableView" Header="" Width="40" IsReadOnly="True" DisplayIndex="6">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="Images/view.png" ToolTip="View Player" Width="20" Height="20" 
+                                            x:Name="View"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn x:Name="addPlayer" Width="40" IsReadOnly="True" DisplayIndex="7" Visibility="Hidden">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="Images/plus.png" ToolTip="Add Player To Competition" Width="20" Height="20" 
+                                       x:Name="Add"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        
+        <StackPanel Height="600" Width="800" Grid.Row="2" Margin="280,0,0,0" VerticalAlignment="Top">
+            <DataGrid x:Name="competitionPlayers" AutoGenerateColumns="False" Height="250" Width="210" 
+                      Background="Transparent" CanUserAddRows="False" SelectionUnit="Cell" 
+                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" 
+                      Visibility="Hidden" SelectedCellsChanged="CompetitionPlayers_SelectedCellsChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="Id2" Header="Id" Width="30" CanUserResize="False" 
+                            Visibility="Hidden" Binding="{Binding Path=Id}"/>
+                    <DataGridTextColumn x:Name="Member2" Header="Competitor Name" Width="150" CanUserResize="False" 
+                    CanUserReorder="False" Binding="{Binding Path=Member}" IsReadOnly="True"/>
+                    <DataGridTemplateColumn Header="" Width="40" IsReadOnly="True" DisplayIndex="2">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="Images/minus.png" ToolTip="Remove Player From Competition" Width="20" Height="20"  
+                           x:Name="Remove"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        <StackPanel Height="600" Width="600" Grid.Row="2" Margin="350,0,0,0" VerticalAlignment="Top">
+            <DataGrid x:Name="competitionList" AutoGenerateColumns="False" Height="250" Width="410" 
+              Background="Transparent" CanUserAddRows="False" SelectionUnit="Cell" 
+              VerticalScrollBarVisibility="Auto" Visibility="Visible" 
+              SelectedCellsChanged="CompetitionList_SelectedCellsChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="Id3" Header="Id" Width="30" CanUserResize="False" 
+                    Visibility="Hidden" Binding="{Binding Path=Id}"/>
+                    <DataGridTextColumn x:Name="compList" Header="Competition Name" Width="250" CanUserResize="False" 
+                                        CanUserReorder="False" Binding="{Binding Path=CompName}" IsReadOnly="True"/>
+                    <DataGridTextColumn x:Name="compDate" Header="Date" Width="70" CanUserResize="False" 
+                                        CanUserReorder="False" Binding="{Binding Path=Date}" IsReadOnly="True"/>
+                    <DataGridTemplateColumn Header="" Width="40" IsReadOnly="True" DisplayIndex="3">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="Images/view.png" ToolTip="View Competition" Width="20" Height="20"  
+                                       x:Name="viewComp"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="" Width="40" IsReadOnly="True" DisplayIndex="4">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="Images/delete.png" ToolTip="Delete Competition" Width="20" Height="20"  
+                                       x:Name="deleteComp"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>
