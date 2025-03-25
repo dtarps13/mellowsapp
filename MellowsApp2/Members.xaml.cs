@@ -463,13 +463,13 @@ namespace MellowsApp2
                 // Variable to check handicap entered is a valid number
                 bool isNum = double.TryParse(handicap.Text, out double num);
                 //Check the validation of all required fields to add/update member
-                if (memberRegNo.Text == null || memberRegNo.Text.Trim() == "")
+                if (memberName.Text == null || memberName.Text.Trim() == "")
                 {
                     MessageBox.Show("Please enter member name", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
                     memberName.Focus();
                     return;
                 }
-                else if (memberName.Text == null || memberName.Text.Trim() == "")
+                else if (memberRegNo.Text == null || memberRegNo.Text.Trim() == "")
                 {
                     MessageBox.Show("Please enter member registration number", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
                     memberRegNo.Focus();
