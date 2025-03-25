@@ -1381,7 +1381,7 @@ namespace MellowsApp2 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MellowsApp2;component/competition.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MellowsApp2;V1.0.0.0;component/competition.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Competition.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

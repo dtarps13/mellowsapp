@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MellowsApp2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ba5ac2b44da409a5d46b262632490429df29bf8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8ee2a6c0d983fbb42f2f1483844e1fcbddd2886")]
 [assembly: System.Reflection.AssemblyProductAttribute("MellowsApp2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MellowsApp2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

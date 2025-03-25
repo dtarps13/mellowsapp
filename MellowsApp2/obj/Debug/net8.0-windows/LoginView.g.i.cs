@@ -69,7 +69,7 @@ namespace MellowsApp2 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MellowsApp2;component/loginview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MellowsApp2;V1.0.0.0;component/loginview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LoginView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

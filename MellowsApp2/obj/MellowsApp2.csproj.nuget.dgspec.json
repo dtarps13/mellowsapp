@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\MellowsApp2.csproj": {}
+    "C:\\Users\\donal\\OneDrive\\Desktop\\MellowsApp2\\MellowsApp2\\MellowsApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\MellowsApp2.csproj": {
+    "C:\\Users\\donal\\OneDrive\\Desktop\\MellowsApp2\\MellowsApp2\\MellowsApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\MellowsApp2.csproj",
+        "projectUniqueName": "C:\\Users\\donal\\OneDrive\\Desktop\\MellowsApp2\\MellowsApp2\\MellowsApp2.csproj",
         "projectName": "MellowsApp2",
-        "projectPath": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\MellowsApp2.csproj",
+        "projectPath": "C:\\Users\\donal\\OneDrive\\Desktop\\MellowsApp2\\MellowsApp2\\MellowsApp2.csproj",
         "packagesPath": "C:\\Users\\donal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donal\\source\\repos\\MellowsApp2\\MellowsApp2\\obj\\",
+        "outputPath": "C:\\Users\\donal\\OneDrive\\Desktop\\MellowsApp2\\MellowsApp2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
